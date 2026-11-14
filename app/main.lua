@@ -72,15 +72,15 @@ if ui.canvas then flag_on_canvas() else flag_with_rects() end
 -- art/logo.png is 27 x 28, made by tools/make_logo.py.
 local LW, LH, LY = 27, 28, 170
 local GAP = 10
-local TY = LY + LH // 2 - 10     -- size 20 text, capitals centred on the logo
+local TY = LY + LH // 2 - 6      -- size 14 text, capitals centred on the logo
 if ui.image then
   ui.image(CX - LW // 2, LY, "art/logo.png")
   local left = CX - LW // 2 - GAP
-  ui.label(0, TY, "STAKE WITH", {size = 20, color = WHITE, w = left, align = "right"})
-  ui.label(CX + LW // 2 + 1 + GAP, TY, "VALIGATOR", {size = 20, color = WHITE})
+  ui.label(0, TY, "STAKE WITH", {size = 14, color = WHITE, w = left, align = "right"})
+  ui.label(CX + LW // 2 + 1 + GAP, TY, "VALIGATOR", {size = 14, color = WHITE})
 else
   -- Solana OS before 0.5.9 can't show images: text only.
-  line(TY, "STAKE WITH VALIGATOR", 20)
+  line(TY, "STAKE WITH VALIGATOR", 14)
 end
 
 function on_key(key, rep)
