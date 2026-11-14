@@ -1,0 +1,10 @@
+{
+  "id": "kim-jong-nope",
+  "name": "Kim Jong Nope",
+  "version": "1.0.0",
+  "summary": "The Kim Jong Un pin badge, on your badge.",
+  "icon": "image",
+  "accent": "C8102E",
+  "category": "demos",
+  "permissions": []
+}
